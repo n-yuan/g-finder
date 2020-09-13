@@ -1,3 +1,4 @@
+//This is version 1.2
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "./styles/css/animate.css";
