@@ -14,6 +14,7 @@ const Navbar = ({ icon, title }) => {
         <Link className="nav-link text-primary" onClick={clearSearch} to="/">
           <h1 className="mb-0">
             <i className={icon} />
+            {""}
             {title}
           </h1>
         </Link>
