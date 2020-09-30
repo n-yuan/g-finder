@@ -46,7 +46,11 @@ const SearchResults = () => {
               to={`/user/${repo.owner.login}`}
               className='repo-owner bg-light card m-1 py-1'
             >
-              <div className='text-primary px-3'>Owner: {repo.owner.login}</div>
+              <div className='text-primary px-3'><img
+                  src={repo.owner.avatar_url}
+                  alt=""
+                  className="search-repos-owner-img"
+                />{repo.owner.login}</div>
             </Link>
             <RepoItem repo={repo} />
           </div>

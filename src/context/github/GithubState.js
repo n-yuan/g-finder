@@ -77,6 +77,8 @@ const GithubState = (props) => {
       `https://api.github.com/search/repositories?q=${text}&client_id=${githubClientId}&client_secret=${githubClientSecret}&sort=stars&order=desc`
     );
 
+    console.log(res.data);
+
     dispatch({
       type: SEARCH_REPOS,
       payload: res.data.items,
