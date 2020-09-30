@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 
-const UserItem = ({ user: { login, avatar_url, score } }) => {
+const UserItem = ({ user: { login, avatar_url } }) => {
   return (
     <div className='card user-card text-center py-3 my-1 '>
       <img
@@ -12,7 +12,7 @@ const UserItem = ({ user: { login, avatar_url, score } }) => {
         style={{ width: "60px" }}
       />
       <h3>{login}</h3>
-      <p className='score'>Match score:{score}</p>
+      
 
       <div>
         <Link to={`/user/${login}`} className='btn btn-dark'>
