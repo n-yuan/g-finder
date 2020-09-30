@@ -41,23 +41,22 @@ const SearchResults = () => {
     return (
       <div className="py-3 row" style={{ position: "relative", top: "-30px" }}>
         {repos.map((repo) => (
-          <div key={repo.id} className="col-md-4 p-0 mt-3">
-            <Link
-              to={`/user/${repo.owner.login}`}
-              className="repo-card bg-light card m-1 py-1"
-            >
-              <div className="text-primary px-3">
-                <img
-                  src={repo.owner.avatar_url}
-                  alt=""
-                  className="search-repos-owner-img"
-                />
-                <div className="search-repos-owner-login">
-                  {repo.owner.login}
+          <div key={repo.id} className="col-md-4 mt-3">
+            <div className="repo-card ">
+              <Link to={`/user/${repo.owner.login}`} className="bg-light  m-1 ">
+                <div className="text-primary px-3">
+                  <img
+                    src={repo.owner.avatar_url}
+                    alt=""
+                    className="search-repos-owner-img"
+                  />
+                  <div className="search-repos-owner-login">
+                    {repo.owner.login}
+                  </div>
                 </div>
-              </div>
+              </Link>
               <RepoItem repo={repo} />
-            </Link>
+            </div>
           </div>
         ))}
       </div>

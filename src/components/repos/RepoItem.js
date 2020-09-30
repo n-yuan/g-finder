@@ -52,7 +52,7 @@ const svgWatch = (
 const RepoItem = ({ repo }) => {
   return (
     <div className="repo-item-container m-1">
-      <div className="p-3">
+      <div className="px-3">
         <h5 className="mb-1">
           <a
             className="text-secondary"
