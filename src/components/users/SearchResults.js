@@ -13,12 +13,12 @@ const SearchResults = () => {
 
   if (users.length === 0 && repos.length === 0 && !loading) {
     return (
-      <div className='row d-none d-md-block'>
-        <div className='col-12' style={{ height: "100px" }}>
+      <div className="row d-none d-md-block">
+        <div className="col-12" style={{ height: "100px" }}>
           <img
             src={scubatocat}
-            alt='scubatocat'
-            className='scubatocat animated slideInUp'
+            alt="scubatocat"
+            className="scubatocat animated slideInUp"
           ></img>
         </div>
       </div>
@@ -29,9 +29,9 @@ const SearchResults = () => {
     return <Spinner />;
   } else if (users.length !== 0) {
     return (
-      <div className='py-3 row' style={{ position: "relative", top: "-30px" }}>
-        {users.map(user => (
-          <div key={user.id} className='col-md-4 px-1'>
+      <div className="py-3 row" style={{ position: "relative", top: "-30px" }}>
+        {users.map((user) => (
+          <div key={user.id} className="col-md-4 px-1">
             <UserItem user={user} />
           </div>
         ))}
@@ -39,20 +39,25 @@ const SearchResults = () => {
     );
   } else if (repos.length !== 0) {
     return (
-      <div className='py-3 row' style={{ position: "relative", top: "-30px" }}>
-        {repos.map(repo => (
-          <div key={repo.id} className='col-md-4 p-0 mt-3'>
+      <div className="py-3 row" style={{ position: "relative", top: "-30px" }}>
+        {repos.map((repo) => (
+          <div key={repo.id} className="col-md-4 p-0 mt-3">
             <Link
               to={`/user/${repo.owner.login}`}
-              className='repo-owner bg-light card m-1 py-1'
+              className="repo-card bg-light card m-1 py-1"
             >
-              <div className='text-primary px-3'><img
+              <div className="text-primary px-3">
+                <img
                   src={repo.owner.avatar_url}
                   alt=""
                   className="search-repos-owner-img"
-                />{repo.owner.login}</div>
+                />{" "}
+                <div className="search-repos-owner-login">
+                  {repo.owner.login}
+                </div>
+              </div>
+              <RepoItem repo={repo} />
             </Link>
-            <RepoItem repo={repo} />
           </div>
         ))}
       </div>

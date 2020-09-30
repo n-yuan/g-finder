@@ -51,7 +51,7 @@ const svgWatch = (
 
 const RepoItem = ({ repo }) => {
   return (
-    <div className="card repo-card m-1">
+    <div className="card  m-1">
       <div className="card-body p-3">
         <h5 className="mb-1">
           <a
