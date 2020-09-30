@@ -52,6 +52,7 @@ const svgWatch = (
 const RepoItem = ({ repo }) => {
   return (
     <div className="repo-item-container m-1">
+      <div className="repo-item-card">
       <div className="px-3">
         <h5 className="mb-1">
           <a
@@ -77,6 +78,7 @@ const RepoItem = ({ repo }) => {
           {repo.watchers_count}
         </div>
         {/* Last updated: {repo.updated_at} */}
+      </div>
       </div>
     </div>
   );

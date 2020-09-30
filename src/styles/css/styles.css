@@ -230,7 +230,7 @@ body {
       position: relative;
       top: -10px; }
   .repo-card .repoDescription {
-    height: 80px;
+    height: 60px;
     overflow: hidden; }
   .repo-card .repoLable {
     color: #6c757d;
@@ -238,6 +238,18 @@ body {
     font-size: 14px;
     fill: #6c757d; }
 
+.repo-item-container .repo-item-card {
+  border-radius: 0px;
+  border-width: 0px;
+  box-shadow: -5px 10px 60px #e0e5e9;
+  height: 220px;
+  overflow: hidden;
+  background-color: #fff;
+  border-top-color: #dda08e;
+  border-top-width: 3px;
+  padding-top: 13px; }
+  .repo-item-container .repo-item-card:hover {
+    text-decoration: none; }
 .repo-item-container .repo-card-name {
   font-size: 20px;
   height: 30px;
@@ -256,3 +268,6 @@ body {
     margin-right: 5px; }
   .repo-item-container .language .repo-card-language-name {
     font-size: 14px; }
+.repo-item-container .repoDescription {
+  height: 76px;
+  overflow: hidden; }
