@@ -173,7 +173,7 @@ body {
   background-color: #fff;
   border-top-color: #dda08e;
   border-top-width: 3px;
-  &:hover{
+  &:hover {
     text-decoration: none;
   }
   .text-primary {
@@ -183,17 +183,21 @@ body {
       border-radius: 20%;
       width: 50px;
       display: inline-block;
-      margin-bottom: 35px;
+      margin-bottom: 8px;
     }
     .search-repos-owner-login {
       display: inline-block;
       padding: 0px 20px;
       position: relative;
-      top:-20px;
-     
+      top: -20px;
     }
   }
-
+  .repo-card-name {
+    font-size: 20px;
+    height: 30px;
+    overflow: hidden;
+    color: $orange;
+  }
   h5 {
     height: 24px;
     font-weight: 600;
@@ -202,7 +206,14 @@ body {
   .language {
     font-weight: 600;
     color: $primary;
-    font-size: 15px;
+    font-size: 14px;
+    .repo-card-language-icon {
+      color: $orange;
+      margin-right: 5px;
+    }
+    .repo-card-language-name {
+      font-size: 14px;
+    }
   }
   .repoDescription {
     height: 80px;

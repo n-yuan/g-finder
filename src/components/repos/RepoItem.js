@@ -51,8 +51,8 @@ const svgWatch = (
 
 const RepoItem = ({ repo }) => {
   return (
-    <div className="card  m-1">
-      <div className="card-body p-3">
+    <div className="repo-item-container m-1">
+      <div className="p-3">
         <h5 className="mb-1">
           <a
             className="text-secondary"
@@ -60,10 +60,14 @@ const RepoItem = ({ repo }) => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            {repo.name}
+            <div className="repo-card-name">{repo.name}</div>
           </a>
         </h5>
-        <div className="language mb-3">Language: {repo.language}</div>
+        <div className="language mb-3">
+          {" "}
+          <i className="fas fa-circle fa-sm repo-card-language-icon" />
+          Language: <span className="repo-card-language-name">{repo.language}</span>
+        </div>
         <div className="repoDescription mb-2">{repo.description}</div>
         <div className="repoLable mb-0 pb-0">
           {svgStar}&nbsp;

@@ -51,7 +51,7 @@ const SearchResults = () => {
                   src={repo.owner.avatar_url}
                   alt=""
                   className="search-repos-owner-img"
-                />{" "}
+                />
                 <div className="search-repos-owner-login">
                   {repo.owner.login}
                 </div>
