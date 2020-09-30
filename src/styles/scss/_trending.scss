@@ -5,8 +5,10 @@ $primary: #404969;
   color: $primary;
   margin-top: 18px;
   margin-left: 20px;
-
   font-size: 28px;
+  .trending-page-header-time{
+  font-size: 14px;
+  }
 }
 
 .trending-card {

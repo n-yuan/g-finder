@@ -3,6 +3,8 @@
   margin-top: 18px;
   margin-left: 20px;
   font-size: 28px; }
+  .trending-page-header .trending-page-header-time {
+    font-size: 14px; }
 
 .trending-card {
   color: #404969;

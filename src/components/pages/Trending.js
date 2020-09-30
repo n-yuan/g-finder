@@ -27,7 +27,10 @@ const Trending = () => {
       <div className="container">
         <div className="row">
           <div className="col-lg-6">
-            <h1 className="trending-page-header">Trending Repos</h1>
+            <h1 className="trending-page-header">
+              Trending Repos{" "}
+              <span className="trending-page-header-time">{selectedTime}</span>
+            </h1>
           </div>
           <div className="col-lg-6">
             <div className="trending-filter-container">
