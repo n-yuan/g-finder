@@ -72,7 +72,237 @@ const Trending = () => {
                       {" "}
                       All languages
                     </a>
-
+                    <a
+                      className="dropdown-item"
+                      href="#"
+                      onClick={() => {
+                        setSelectedLanguage({
+                          name: "Python",
+                          urlParam: "python",
+                        });
+                        filterTrendingRepos(
+                          "python",
+                          selectedTime === "Today"
+                            ? "daily"
+                            : selectedTime === "This Week"
+                            ? "weekly"
+                            : "monthly"
+                        );
+                      }}
+                    >
+                      {" "}
+                      Python
+                    </a>
+                    <a
+                      className="dropdown-item"
+                      href="#"
+                      onClick={() => {
+                        setSelectedLanguage({
+                          name: "C",
+                          urlParam: "c",
+                        });
+                        filterTrendingRepos(
+                          "c",
+                          selectedTime === "Today"
+                            ? "daily"
+                            : selectedTime === "This Week"
+                            ? "weekly"
+                            : "monthly"
+                        );
+                      }}
+                    >
+                      {" "}
+                      C
+                    </a>
+                    <a
+                      className="dropdown-item"
+                      href="#"
+                      onClick={() => {
+                        setSelectedLanguage({
+                          name: "C++",
+                          urlParam: "c%2B%2B",
+                        });
+                        filterTrendingRepos(
+                          "c%2B%2B",
+                          selectedTime === "Today"
+                            ? "daily"
+                            : selectedTime === "This Week"
+                            ? "weekly"
+                            : "monthly"
+                        );
+                      }}
+                    >
+                      {" "}
+                      C++
+                    </a>
+                    <a
+                      className="dropdown-item"
+                      href="#"
+                      onClick={() => {
+                        setSelectedLanguage({
+                          name: "Java",
+                          urlParam: "java",
+                        });
+                        filterTrendingRepos(
+                          "java",
+                          selectedTime === "Today"
+                            ? "daily"
+                            : selectedTime === "This Week"
+                            ? "weekly"
+                            : "monthly"
+                        );
+                      }}
+                    >
+                      {" "}
+                      Java
+                    </a>
+                    <a
+                      className="dropdown-item"
+                      href="#"
+                      onClick={() => {
+                        setSelectedLanguage({
+                          name: "Javascript",
+                          urlParam: "javascript",
+                        });
+                        filterTrendingRepos(
+                          "javascript",
+                          selectedTime === "Today"
+                            ? "daily"
+                            : selectedTime === "This Week"
+                            ? "weekly"
+                            : "monthly"
+                        );
+                      }}
+                    >
+                      {" "}
+                      Javascript
+                    </a>
+                    <a
+                      className="dropdown-item"
+                      href="#"
+                      onClick={() => {
+                        setSelectedLanguage({
+                          name: "Ruby",
+                          urlParam: "ruby",
+                        });
+                        filterTrendingRepos(
+                          "ruby",
+                          selectedTime === "Today"
+                            ? "daily"
+                            : selectedTime === "This Week"
+                            ? "weekly"
+                            : "monthly"
+                        );
+                      }}
+                    >
+                      {" "}
+                      Ruby
+                    </a>
+                    <a
+                      className="dropdown-item"
+                      href="#"
+                      onClick={() => {
+                        setSelectedLanguage({
+                          name: "PHP",
+                          urlParam: "php",
+                        });
+                        filterTrendingRepos(
+                          "php",
+                          selectedTime === "Today"
+                            ? "daily"
+                            : selectedTime === "This Week"
+                            ? "weekly"
+                            : "monthly"
+                        );
+                      }}
+                    >
+                      {" "}
+                      PHP
+                    </a>
+                    <a
+                      className="dropdown-item"
+                      href="#"
+                      onClick={() => {
+                        setSelectedLanguage({
+                          name: "HTML",
+                          urlParam: "html",
+                        });
+                        filterTrendingRepos(
+                          "html",
+                          selectedTime === "Today"
+                            ? "daily"
+                            : selectedTime === "This Week"
+                            ? "weekly"
+                            : "monthly"
+                        );
+                      }}
+                    >
+                      {" "}
+                      HTML
+                    </a>
+                    <a
+                      className="dropdown-item"
+                      href="#"
+                      onClick={() => {
+                        setSelectedLanguage({
+                          name: "Rust",
+                          urlParam: "rust",
+                        });
+                        filterTrendingRepos(
+                          "rust",
+                          selectedTime === "Today"
+                            ? "daily"
+                            : selectedTime === "This Week"
+                            ? "weekly"
+                            : "monthly"
+                        );
+                      }}
+                    >
+                      {" "}
+                      Rust
+                    </a>
+                    <a
+                      className="dropdown-item"
+                      href="#"
+                      onClick={() => {
+                        setSelectedLanguage({
+                          name: "Go",
+                          urlParam: "go",
+                        });
+                        filterTrendingRepos(
+                          "go",
+                          selectedTime === "Today"
+                            ? "daily"
+                            : selectedTime === "This Week"
+                            ? "weekly"
+                            : "monthly"
+                        );
+                      }}
+                    >
+                      {" "}
+                      Go
+                    </a>
+                    <a
+                      className="dropdown-item"
+                      href="#"
+                      onClick={() => {
+                        setSelectedLanguage({
+                          name: "Shell",
+                          urlParam: "shell",
+                        });
+                        filterTrendingRepos(
+                          "shell",
+                          selectedTime === "Today"
+                            ? "daily"
+                            : selectedTime === "This Week"
+                            ? "weekly"
+                            : "monthly"
+                        );
+                      }}
+                    >
+                      {" "}
+                      Shell
+                    </a>
                     {filteredLanguage == null
                       ? languageList.map((language) => {
                           return (
