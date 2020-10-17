@@ -1,0 +1,1 @@
+export const TRENDING_API_URL = "https://ghapi.huchen.dev";

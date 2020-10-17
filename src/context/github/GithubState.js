@@ -2,6 +2,7 @@ import React, { useReducer } from "react";
 import axios from "axios";
 import GithubContext from "./githubContext";
 import GithubReducer from "./githubReducer";
+import { TRENDING_API_URL } from "../../constants";
 
 import {
   SEARCH_USERS,
@@ -126,7 +127,7 @@ const GithubState = (props) => {
   //Get trending Repos
   const getTrendingRepos = async () => {
     setTrendingRepoLoading();
-    const res = await axios.get(`https://ghapi.huchen.dev/repositories`);
+    const res = await axios.get(`${TRENDING_API_URL}/repositories`);
     dispatch({
       type: GET_TRENDING_REPOS,
       payload: res.data,
@@ -135,7 +136,7 @@ const GithubState = (props) => {
 
   //Get Language List
   const getLanguageList = async () => {
-    const res = await axios.get(`https://ghapi.huchen.dev/languages`);
+    const res = await axios.get(`${TRENDING_API_URL}/languages`);
     dispatch({
       type: GET_LANGUAGE_LIST,
       payload: res.data,
@@ -162,7 +163,7 @@ const GithubState = (props) => {
   const filterTrendingRepos = async (language, time) => {
     setTrendingRepoLoading();
     const res = await axios.get(
-      `https://ghapi.huchen.dev/repositories?language=${language}&since=${time}`
+      `${TRENDING_API_URL}/repositories?language=${language}&since=${time}`
     );
     dispatch({
       type: FILTER_TRENDING_REPOS,
