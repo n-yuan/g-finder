@@ -1,1 +1,1 @@
-export const TRENDING_API_URL = "https://ghapi.huchen.dev";
+export const TRENDING_API_URL = "https://github-trending-api-wonder.herokuapp.com";
